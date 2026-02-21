@@ -11,7 +11,7 @@
       "import": "./dist/index.js"
     },
     "./radix": {
-      "types": "./dist/radix.d.ts",
+      "types": "./dist/radix/index.d.ts",
       "import": "./dist/radix.js"
     },
     "./package.json": "./package.json"
@@ -23,7 +23,7 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "tsdown",
+    "build": "tsdown && tsc --declaration --emitDeclarationOnly --outDir dist",
     "build:watch": "tsdown --watch",
     "dev": "tsdown --watch",
     "test": "vitest",

@@ -6,9 +6,7 @@ export default defineConfig({
     radix: 'src/radix/index.ts',
   },
   format: ['esm'],
-  dts: {
-    resolve: true,
-  },
+  dts: false,
   target: 'es2022',
   splitting: true,
   treeshake: true,
