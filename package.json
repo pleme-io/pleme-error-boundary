@@ -1,5 +1,5 @@
 {
-  "name": "@pleme/error-boundary",
+  "name": "@pleme-io/error-boundary",
   "version": "2.0.0",
   "description": "Unified error handling library for Nexus products with toast notifications",
   "type": "module",
@@ -37,7 +37,7 @@
   },
   "peerDependencies": {
     "react": ">=18.3.0",
-    "@pleme/types": "^1.0.0",
+    "@pleme-io/types": "^1.0.0",
     "notistack": "^3.0.0",
     "@mui/material": ">=6.0.0",
     "@emotion/react": ">=11.0.0",
@@ -49,7 +49,7 @@
     "react": {
       "optional": false
     },
-    "@pleme/types": {
+    "@pleme-io/types": {
       "optional": true
     },
     "notistack": {
