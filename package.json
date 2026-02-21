@@ -1,0 +1,110 @@
+{
+  "name": "@pleme/error-boundary",
+  "version": "2.0.0",
+  "description": "Unified error handling library for Nexus products with toast notifications",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./radix": {
+      "types": "./src/radix/index.ts",
+      "import": "./src/radix/index.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "build:watch": "tsdown --watch",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
+    "check": "biome check --diagnostic-level=warn src",
+    "check:types": "tsc --noEmit",
+    "format": "biome check --write src",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": ">=18.3.0",
+    "@pleme/types": "^1.0.0",
+    "notistack": "^3.0.0",
+    "@mui/material": ">=6.0.0",
+    "@emotion/react": ">=11.0.0",
+    "@emotion/styled": ">=11.0.0",
+    "xstate": "^5.0.0",
+    "@xstate/react": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "@pleme/types": {
+      "optional": true
+    },
+    "notistack": {
+      "optional": true
+    },
+    "@mui/material": {
+      "optional": true
+    },
+    "@emotion/react": {
+      "optional": true
+    },
+    "@emotion/styled": {
+      "optional": true
+    },
+    "xstate": {
+      "optional": true
+    },
+    "@xstate/react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitest/coverage-v8": "^3.2.0",
+    "@vitest/ui": "^3.2.0",
+    "@xstate/react": "^4.0.0",
+    "jsdom": "^27.0.0",
+    "notistack": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsdown": "^0.2.0",
+    "typescript": "^5.7.0",
+    "vite": "^5.0.0",
+    "vitest": "^3.2.0",
+    "xstate": "^5.0.0"
+  },
+  "keywords": [
+    "react",
+    "error-boundary",
+    "error-handling",
+    "typescript",
+    "library",
+    "nexus",
+    "pleme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pleme-io/pleme-error-boundary.git"
+  },
+  "license": "MIT",
+  "author": "Pleme.io Team"
+}
