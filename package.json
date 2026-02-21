@@ -3,16 +3,16 @@
   "version": "2.0.0",
   "description": "Unified error handling library for Nexus products with toast notifications",
   "type": "module",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "import": "./src/index.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     },
     "./radix": {
-      "types": "./src/radix/index.ts",
-      "import": "./src/radix/index.ts"
+      "types": "./dist/radix.d.ts",
+      "import": "./dist/radix.js"
     },
     "./package.json": "./package.json"
   },
@@ -106,5 +106,6 @@
     "url": "https://github.com/pleme-io/pleme-error-boundary.git"
   },
   "license": "MIT",
-  "author": "Pleme.io Team"
+  "author": "Pleme.io Team",
+  "module": "./dist/index.js"
 }
